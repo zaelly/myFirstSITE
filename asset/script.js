@@ -30,4 +30,5 @@
               i++
             }
         }
+        alert('bem vindo' + userBemVindo + '!');
      
