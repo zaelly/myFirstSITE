@@ -18,4 +18,16 @@
         let obj = document.getElementById('password');
         obj.type = "password";
         }
-    
+        
+        function userBemVindo() {
+          var id = document.getElementById(Username);
+          var letra ="";
+          var nome ="";
+          i = 0;
+            while( letra != " "){
+              letra = id.charAt(i);
+              nome += letra;
+              i++
+            }
+        }
+     
