@@ -11,24 +11,20 @@ $conexao = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conexao) {
     die("Falha na conexão: " . mysqli_connect_error());
   }
+  echo "A conexão foi bem-sucedida";
   // Receber os dados do formulário
 $usuario = $_POST["usuario"];
+$email = $_POST["email"];
 $senha = $_POST["senha"];
 
 // Inserir os dados no banco de dados
-$sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' AND senha = '$senha'";
-$result = mysqli_query($conexao, $sql);
+$sql = "INSERT INTO cadastro (usuario, email, senha) VALUES ('$usuario', '$email', '$senha')";
 
-// Verificar se há algum registro
-if (mysqli_num_rows($result) > 0) {
-  // Redirecionar para a página principal
-  header("Location:  myFirstSITE/home.html");
-} else {
-  echo "<script>
-  if(confirm('Email ou senha incorretos, tente novamente!')){
-    window.history.back();
-  }
-  </script>";
+if (mysqli_query($conexao, $sql)) {
+  header("Location: login.html");
+} 
+  else {
+  echo "Erro ao criar registro: " . mysqli_error($conexao);
 }
 
 // Fechar a conexão com o banco de dados

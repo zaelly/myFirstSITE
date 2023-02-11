@@ -13,17 +13,22 @@ if (!$conexao) {
   }
   // Receber os dados do formulário
 $usuario = $_POST["usuario"];
-$email = $_POST["email"];
 $senha = $_POST["senha"];
 
 // Inserir os dados no banco de dados
-$sql = "INSERT INTO cadastro (usuario, email, senha) VALUES ('$usuario', '$email', '$senha')";
+$sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' AND senha = '$senha'";
+$result = mysqli_query($conexao, $sql);
 
-if (mysqli_query($conexao, $sql)) {
-  header("Location: myFirstSITE/login.html");
-} 
-  else {
-  echo "Erro ao criar registro: " . mysqli_error($conexao);
+// Verificar se há algum registro
+if (mysqli_num_rows($result) > 0) {
+  // Redirecionar para a página principal
+  header("Location:  home.html");
+} else {
+  echo "<script>
+  if(confirm('Email ou senha incorretos, tente novamente!')){
+    window.history.back();
+  }
+  </script>";
 }
 
 // Fechar a conexão com o banco de dados
