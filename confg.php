@@ -11,6 +11,7 @@ $cnn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$cnn) {
     die("Falha na conexão: " . mysqli_connect_error());
   }
+  echo "A conexão foi bem-sucedida";
   // Receber os dados do formulário
 $usuario = $_POST["usuario"];
 $email = $_POST["email"];
@@ -19,7 +20,7 @@ $senha = $_POST["senha"];
 // Inserir os dados no banco de dados
 $sql = "INSERT INTO cadastro (usuario, email, senha) VALUES ('$usuario', '$email', '$senha')";
 
-if (mysqli_query($cnn, $sql)) {
+if (mysqli_query($conexao, $sql)) {
   header("Location: login.html");
 } 
   else {
