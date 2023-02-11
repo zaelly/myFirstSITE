@@ -5,10 +5,10 @@ $username = 'root';
 $password = '';
 $dbname = 'myFirstSite';
 
-$conexao = mysqli_connect($servername, $username, $password, $dbname);
+$cnn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Verificar a conexão
-if (!$conexao) {
+if (!$cnn) {
     die("Falha na conexão: " . mysqli_connect_error());
   }
   // Receber os dados do formulário
@@ -17,7 +17,7 @@ $senha = $_POST["senha"];
 
 // Inserir os dados no banco de dados
 $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' AND senha = '$senha'";
-$result = mysqli_query($conexao, $sql);
+$result = mysqli_query($cnn, $sql);
 
 // Verificar se há algum registro
 if (mysqli_num_rows($result) > 0) {
@@ -32,5 +32,5 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 // Fechar a conexão com o banco de dados
-mysqli_close($conexao);
+mysqli_close($cnn);
 ?>
