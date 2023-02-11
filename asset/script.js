@@ -30,5 +30,5 @@
               i++
             }
         }
-        alert('bem vindo' + userBemVindo + '!');
+        //alert('bem vindo' + userBemVindo + '!');
      
