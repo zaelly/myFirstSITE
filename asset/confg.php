@@ -20,7 +20,7 @@ $senha = $_POST["senha"];
 $sql = "INSERT INTO cadastro (usuario, email, senha) VALUES ('$usuario', '$email', '$senha')";
 
 if (mysqli_query($conexao, $sql)) {
-  header("Location: login.php");
+  header("Location: login.html");
 } 
   else {
   echo "Erro ao criar registro: " . mysqli_error($conexao);
