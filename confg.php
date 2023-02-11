@@ -20,7 +20,7 @@ $senha = $_POST["senha"];
 // Inserir os dados no banco de dados
 $sql = "INSERT INTO cadastro (usuario, email, senha) VALUES ('$usuario', '$email', '$senha')";
 
-if (mysqli_query($conexao, $sql)) {
+if (mysqli_query($cnn, $sql)) {
   header("Location: login.html");
 } 
   else {

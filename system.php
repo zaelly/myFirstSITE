@@ -5,7 +5,7 @@ $username = 'root';
 $password = '';
 $dbname = 'myFirstSite';
 
-$$cnn = mysqli_connect($servername, $username, $password, $dbname);
+$cnn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Verificar a conexão
 if (!$cnn) {
