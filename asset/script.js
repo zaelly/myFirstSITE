@@ -31,4 +31,15 @@
             }
         }
         alert('bem vindo' + nome + '!');
-     
+
+     const botaoX = document.querySelector("abreBtn");
+     const sidebar = document.querySelector(".sidebar");
+
+    function fecharNavbar() {
+      if (botaoX.addEventListener("click")) {
+        sidebar.style.display = "block";
+      }
+      if (botaoX.addEventListener("click")) {
+        sidebar.style.display = "none";
+      }
+    };
