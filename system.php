@@ -22,7 +22,7 @@ $result = mysqli_query($cnn, $sql);
 // Verificar se há algum registro
 if (mysqli_num_rows($result) > 0) {
   // Redirecionar para a página principal
-  header("Location:  home.html");
+  header("Location: index.html");
 } else {
   echo "<script>
   if(confirm('Email ou senha incorretos, tente novamente!')){

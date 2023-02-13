@@ -11,6 +11,9 @@ body {
     height: 100;
     display: block;
 }
+h1,h2,h3,h4{
+    color: #f1f1f1;
+}
 
 input[type=email],
 input[type=password],
@@ -28,7 +31,7 @@ input[type=text] {
     font-size: 15px;
 }
 
-button {
+.buttonc {
     padding: 10px;
     margin: 15px;
     width: 150px;
@@ -74,4 +77,43 @@ button {
     margin: 23px -40px;
     position: absolute;
     width: 20px;
+}
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+
+  /* Define o estilo dos links na barra lateral */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+  }
+
+  /* Define o estilo dos links na barra lateral ao passar o mouse */
+  .sidebar a:hover {
+    color: #ffffff;
+  }
+
+  .imagX{
+    width: 25px;
+    height: 20px;
+    padding-top: 12px;
+    margin-left: -32px;
+    
+  }
+  .btnX{
+    width: 30px;
+    height: 25px;  
+    padding: 0px;
+    border-color: #f1f1f1;
 }
