@@ -95,7 +95,7 @@ input[type=text] {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     display: block;
   }
 
@@ -103,19 +103,3 @@ input[type=text] {
   .sidebar a:hover {
     color: #ffffff;
   }
-
-  .imagX{
-    width: 25px;
-    height: 20px;
-    padding-top: 12px;
-    margin-left: -32px;
-    
-  }
-  .btnX{
-    width: 30px;
-    height: 25px;  
-    padding: 0px;
-    border-color: #f1f1f1;
-    border-color: transparent;
-    background-color: transparent;
-}
