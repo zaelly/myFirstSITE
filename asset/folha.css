@@ -116,4 +116,6 @@ input[type=text] {
     height: 25px;  
     padding: 0px;
     border-color: #f1f1f1;
+    border-color: transparent;
+    background-color: transparent;
 }
