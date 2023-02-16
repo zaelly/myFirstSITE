@@ -6,16 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="asset/folha.css">
+    <script href="asset/script.js"></script>
 </head>
 <body>
 
-    <div class="sidebar">
-        <a href="#home">Home</a>
-        <a href="#services">Serviços</a>
-        <a href="#clients">Clientes</a>
-        <a href="#contact">Contatos</a>
+    <script>
+        var nome = localStorage.getItem("userName");
+        var mensagem = "Bem-vindo, " + nome + "!";
+    
+        console.log(mensagem);
+    </script>
+
+        <div class="sidebar">
+            <a href="#home">Perfil</a>
+            <a href="#clients"></a>
+            <a href="#contact"></a>
+            <!-- fazer botao que sai da pag index pra pag de entrada -->
+            <button id="logout" type="submit" name="submit" value="submit" class="btnLgt" onclick="sair()">Logout</button>
         </div>
 
-    <h1>Seja bem vindo!</h1>
+        <h1>Olá!</h1>
 </body>
 </html>

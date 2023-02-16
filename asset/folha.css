@@ -30,8 +30,10 @@ input[type=text] {
     outline: none;
     font-size: 15px;
 }
+.btnLgt{
 
-.buttonc {
+}
+.button {
     padding: 10px;
     margin: 15px;
     width: 150px;
@@ -85,6 +87,7 @@ input[type=text] {
     z-index: 1;
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: #000000;
     overflow-x: hidden;
     padding-top: 16px;

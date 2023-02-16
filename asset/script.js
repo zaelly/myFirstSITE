@@ -43,3 +43,31 @@
         sidebar.style.display = "none";
       }
     };
+
+    //sessão logout e verificar o usuario
+    function verificarAutenticacao() {
+      if (!localStorage.getItem("usuarioLogado")) {
+        window.location.href = " login.html";
+      }
+    }
+    
+    verificarAutenticacao();
+
+    document.getElementById("formLogin").addEventListener("submit", function(event) {
+      event.preventDefault(); // impede que o formulário seja enviado
+    
+      var usuario = document.getElementById("userName").value;
+      var senha = document.getElementById("password").value;
+    
+      // código para verificar o usuário e a senha e armazenar o cookie ou a sessão
+      // ...
+    
+      localStorage.setItem("usuarioLogado", true);
+      window.location.href = "index.html";
+    });
+
+    //função q permite sair da pg
+    function sair() {
+      localStorage.removeItem("usuarioLogado");
+      window.location.href = "login.html";
+    }
