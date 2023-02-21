@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(61, 61, 61);
     text-align: center;
     margin-top: 130px;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +31,7 @@ input[type=text] {
     font-size: 15px;
 }
 
-.buttonc {
+.button {
     padding: 10px;
     margin: 15px;
     width: 150px;
@@ -78,28 +78,50 @@ input[type=text] {
     position: absolute;
     width: 20px;
 }
-.sidebar {
-    height: 100%;
-    width: 150px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+
+/* navbar */
+nav {
     background-color: #000000;
-    overflow-x: hidden;
-    padding-top: 16px;
-  }
+    height: 40px;
+    position:fixed;
+    top: 0px;
+    width: 1300px;
+      padding: 3px;
+    margin-right: 5px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+}
 
-  /* Define o estilo dos links na barra lateral */
-  .sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #c4c4c4;
-    display: block;
-  }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 3px;
+}
 
-  /* Define o estilo dos links na barra lateral ao passar o mouse */
-  .sidebar a:hover {
+.btnNavBar{
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.nameSite{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #ffffff;
-  }
+}
+
+li {
+    float: right; 
+
+}
+
+li a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
