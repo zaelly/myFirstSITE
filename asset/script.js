@@ -71,3 +71,5 @@
       localStorage.removeItem("usuarioLogado");
       window.location.href = "login.html";
     }
+
+    //login e cadastre-se´
