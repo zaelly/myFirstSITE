@@ -10,12 +10,12 @@
           }
 
 // olho
-        document.getElementById("olho").onmouseover = function() {
+        document.getElementById("olho").onclick = function() {
             let obj = document.getElementById('password');
             obj.type = "text";
         };
     
-        document.getElementById("olho").onmouseout = function (){
+        document.getElementById("olho").onclick = function (){
         let obj = document.getElementById('password');
         obj.type = "password";
         };
