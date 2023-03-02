@@ -9,13 +9,13 @@
             }
           }
 
-// olho
-        document.getElementById("olho").onclick = function() {
+olho
+        document.getElementById("olho").onmouseout = function() {
             let obj = document.getElementById('password');
             obj.type = "text";
         };
     
-        document.getElementById("olho").onclick = function (){
+        document.getElementById("olho").onmouseover = function (){
         let obj = document.getElementById('password');
         obj.type = "password";
         };
