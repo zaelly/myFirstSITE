@@ -8,6 +8,8 @@
     
             }
           }
+    document.getElementById("checkbox").onmouseenter = showPassword;
+
 
 // olho
           function showPassword() {
