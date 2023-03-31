@@ -20,15 +20,9 @@
         obj.type = "password";
         };
 
-// outra forma
+  
+   
 
-        //  function mouseoutPass () {
-        //     let obj = document.getElementById('password');
-        //     obj.type = "text";
-        // };
 
-        //  function mouseoverPass () {
-        //   let obj = document.getElementById('password');
-        //   obj.type = "password";
-        //   };
+   
   
