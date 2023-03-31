@@ -10,7 +10,6 @@
           }
     document.getElementById("checkbox").onmouseenter = showPassword;
 
-
 // olho
           function showPassword() {
             let passwordInput = document.getElementById('password');
@@ -26,3 +25,23 @@
           document.getElementById("olho").onmouseleave = hidePassword;
 
           
+function showPassword() {
+  let passwordInput = document.getElementById('password');
+  passwordInput.type = "text";
+}
+
+function hidePassword() {
+  let passwordInput = document.getElementById('password');
+  passwordInput.type = "password";
+}
+
+document.getElementById("olho").onmouseenter = showPassword;
+document.getElementById("olho").onmouseleave = hidePassword;
+
+
+  
+   
+
+
+   
+  
