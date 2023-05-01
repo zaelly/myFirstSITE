@@ -6,43 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="css/folha.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-    <div class="title">
-        <p>Sign Up</p>
-    </div>
-    <div>
-        <form action="confg.php" method="POST">
-            <div class="central">
-                <label>
-                    <input id="email" type="email" name="email" placeholder="Email" required />
-                </label>
-            </div>
-            <div class="central">
-                <label>
-                    <input id="Username" type="text" name="user" placeholder="Usuário" required />
-                </label>
-            </div>
-            <div class="central">
-                <input id="password" type="password" name="senha" placeholder="Senha" required />
-                <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho" class="olho" />
-            </div>
-            <div class="checkbox psc col1">
-                <input type="checkbox" id="checkbox" checked />
-                <label for="check"> Lembrar </label>
-            </div>
+<body>    
+    <main class="central_form_logup">
+        <div class="title">
+            <p>Sign Up</p>
+        </div>
+            <form action="confg.php" method="POST">
+                <div class="central">
+                    <div>
+                        <label>
+                            <input id="Username" type="text" name="user" placeholder="Usuário" required />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input id="email" type="email" name="email" placeholder="Email" required />
+                        </label>
+                    </div>
+                    <div>
+                        <input id="password" type="password" name="senha" placeholder="Senha" required />
+                        <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho" onclick="hidePassword();" onclick="showPassword();" class="olho" />
+                    </div>
+                    <div>
+                        <input id="confiPassword" type="password" name="senha" placeholder="Confirmar Senha" required />
+                        <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho" onclick="hidePassword();" onclick="showPassword();" class="olho" />
+                    </div>
+                </div>
+                <div class="checkbox psc col1">
+                    <input type="checkbox" id="checkbox" checked />
+                    <label for="check"> Lembrar </label>
+                </div>
 
-            <div class="psc link">
-                <p>Ja é cadastrado?<a href="login.html" class="link"> Clique aqui!</a></p>
-            </div>
+                <div>
+                    <button type="submit" name="submit" value="submit" id="button" class="button">Enviar</button>
+                </div>
 
-            <div>
-                <button type="submit" name="submit" value="submit" id="button" class="button">Enviar</button>
-            </div>
-
-        </form>
-    </div>
+                <div class="psc link">
+                    <p>Ja é cadastrado?<a href="login.html" class="link"> Clique aqui!</a></p>
+                </div>
+            </form>
+    </main>
+    <video autoplay loop poster="/img/chyper.png" class="bg_gif">
+         <source src="/img/8642927.gif"
+         type = "video/mp4">
+     </video>    
     <script src="js/scripts.js"></script>
 </body>
 
