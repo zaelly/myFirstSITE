@@ -2,8 +2,7 @@ body {
     background: linear-gradient(to right, rgb(14, 14, 14), #383c3f);
     text-align: center;
     margin-top: 170px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 
 .bg_video{
     position: absolute;
@@ -22,13 +21,9 @@ body {
     justify-content: center;
     align-items: center;
     display: block;
+    margin-top: 1500px;
 }
-.central_form_logup{
-    margin-top: 150px;
-}
-.central_form_login{
-    margin-top: 200px;
-}
+
 h1,h2,h3,h4{
     color: #f1f1f1;
 }
@@ -60,6 +55,7 @@ input[type=text] {
     border:none;
     background: linear-gradient(to right, #7d45ff,  #4100d8);
     align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .title {
@@ -69,25 +65,27 @@ input[type=text] {
 }
 
 .checkbox {
-    color: #ffffff;
     display: left;
 }
 
 .link {
-    color: #005679;
+    color:  rgb(7, 144, 185);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .psc {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffff;
-    color: rgb(113, 163, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color:  rgb(255, 255, 255);
     margin-top: 10px;
-
+    font-size: 17px;
 }
 
 .col1 {
     align-items: center;
     margin-top: 15px;
+    font-size: 13px;
+    color:  rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .olho {
@@ -96,3 +94,14 @@ input[type=text] {
     position: absolute;
     width: 20px;
 }
+
+.perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(79, 80, 79, 0.5);
+    background-image: url('caminho/da/imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+  }

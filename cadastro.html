@@ -10,7 +10,7 @@
 </head>
 
 <body>    
-    <main class="central_form_logup">
+    <main class="conteiner">
         <div class="title">
             <p>Sign Up</p>
         </div>
@@ -18,7 +18,7 @@
                 <div class="central">
                     <div>
                         <label>
-                            <input id="Username" type="text" name="user" placeholder="Usuário" required />
+                            <input id="Username" type="text" name="user" placeholder="Usuário" required autocomplete="on" />
                         </label>
                     </div>
                     <div>
@@ -27,13 +27,10 @@
                         </label>
                     </div>
                     <div>
-                        <input id="password" type="password" name="senha" placeholder="Senha" required />
+                        <input id="password" type="password" name="senha" placeholder="Senha" minlength="9" maxlength="12" required />
                         <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho" onclick="hidePassword();" onclick="showPassword();" class="olho" />
                     </div>
-                    <div>
-                        <input id="confiPassword" type="password" name="senha" placeholder="Confirmar Senha" required />
-                        <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho" onclick="hidePassword();" onclick="showPassword();" class="olho" />
-                    </div>
+                    <!-- colocar um input para repetir a senha -->
                 </div>
                 <div class="checkbox psc col1">
                     <input type="checkbox" id="checkbox" checked />
@@ -47,12 +44,17 @@
                 <div class="psc link">
                     <p>Ja é cadastrado?<a href="login.html" class="link"> Clique aqui!</a></p>
                 </div>
+                <div class="col1">
+                    <label> 
+                        Estando logado no ***** você aceita os <br/><a href="login.html" class="link">Termos de Serviços</a> e <a href="login.html" class="link"> Privacidade e Política </a>
+                    </label>
+                </div>
             </form>
     </main>
-    <video autoplay loop poster="/img/chyper.png" class="bg_gif">
+    <!-- <video autoplay loop poster="/img/chyper.png" class="bg_gif">
          <source src="/img/8642927.gif"
          type = "video/mp4">
-     </video>    
+     </video>     -->
     <script src="js/scripts.js"></script>
 </body>
 

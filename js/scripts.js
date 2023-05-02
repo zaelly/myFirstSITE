@@ -1,6 +1,7 @@
 
 // Menu Mobile
 
+//colocar o onclick separado da function e dps chamar a function com o document.onclick
 document.getElementById("hamburguer-icon").onclick = function(){
   document.getElementById("sliding-header-menu-outer").style.right = "0px";
 };
@@ -107,18 +108,12 @@ function checkbotao() {
 // olho
 function showPassword() {
 let passwordInput = document.getElementById('password');
-let confPasswordInput = document.getElementById('ConfiPassword');
-
 passwordInput.type = "text";
-confPasswordInput.type = "text";
 }
 
 function hidePassword() {
 let passwordInput = document.getElementById('password');
-let confPasswordInput = document.getElementById('ConfiPassword');
-
 passwordInput.type = "password";
-confPasswordInput.type = "password";
 }
 
 document.getElementById("olho").onmousedown = showPassword;
