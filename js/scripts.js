@@ -2,13 +2,15 @@
 // Menu Mobile
 
 //colocar o onclick separado da function e dps chamar a function com o document.onclick
-document.getElementById("hamburguer-icon").onclick = function(){
-  document.getElementById("sliding-header-menu-outer").style.right = "0px";
+function hamburguer(){
+  document.getElementById("sliding-header-menu-outer").style.right = "right = 0px";
 };
-document.getElementById("sliding-header-menu-close-button").onclick = function(){
+ function header_menu(){
   document.getElementById("sliding-header-menu-outer").style.right = "-320px";
 };
 
+document.getElementById("hamburguer-icon").onclick = hamburguer();
+document.getElementById("sliding-header-menu-close-button").onclick = header_menu();
 
 // About us Tab
 
@@ -106,17 +108,16 @@ function checkbotao() {
   }
 }
 // olho
-function showPassword() {
+document.getElementById("olho").onmousedown = function () {
 let passwordInput = document.getElementById('password');
 passwordInput.type = "text";
 }
 
-function hidePassword() {
+document.getElementById("olho").onmouseleave = function () {
 let passwordInput = document.getElementById('password');
 passwordInput.type = "password";
 }
 
-document.getElementById("olho").onmousedown = showPassword;
-document.getElementById("olho").onmousemove = hidePassword;
+
 
 // id="confiPassword" criar um input pra confirmar senha, mexer no mySQL
