@@ -4,11 +4,13 @@ body {
     margin-top: 170px;
     display: block;
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    align-items: center;
-    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;     
 }
-
+.bg_gif{
+    background-image: url('https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 
 h1,h2,h3,h4{
     color: #f1f1f1;
@@ -23,11 +25,13 @@ input[type=text] {
     margin: 8px;
     padding: 12px;
     background: NONE;
-    border: 3px solid #303030;
+    color:#f1f1f1;
+    border: 7px;
+    /* border-color: white; */
+    border-image: url('https://gifs.eco.br/wp-content/uploads/2022/11/gifs-rgb-6.gif');
     border-radius: 5px;
-    color: #ffffff;
-    outline: none;
     font-size: 15px;
+    border-style:solid;
 }
 
 .button {
@@ -39,14 +43,21 @@ input[type=text] {
     cursor: pointer;
     border-radius: 5px;
     border:none;
-    background: linear-gradient(to right, #7d45ff,  #4100d8);
+    background: linear-gradient(to right, #4115a8,  #1b015a);
     align-items: center;
+}
+.container {  
+    display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);  
 }
 
 .title {
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    padding: 15px;
 }
 
 .checkbox {
@@ -54,20 +65,21 @@ input[type=text] {
 }
 
 .link {
-    color:  rgb(7, 144, 185);
+    color:  rgb(0, 0, 0);
 }
 
 .psc {
-    color:  rgb(255, 255, 255);
+    color:  rgb(0, 0, 0);
     margin-top: 10px;
     font-size: 17px;
+    text-shadow : 5px rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .col1 {
     align-items: center;
     margin-top: 15px;
-    font-size: 13px;
-    color:  rgb(255, 255, 255);
+    color:  rgb(0, 0, 0);
 }
 
 .olho {
@@ -77,18 +89,24 @@ input[type=text] {
     width: 20px;
 }
 
+/* perfil do usuario */
 .perfil {
     width: 155px;
     height: 150px;
     border-radius: 50%;
-    background-color: rgba(79, 80, 79, 0.5);
+    background: linear-gradient(to right, #552eaf,  #270083);
+    background-image: url('..//img/3492893.gif');
+    background-size: cover;
+    background-position: center;
     padding: 0;
-
   }
-*{
+  
+/* *{
     background-size: cover;
     background-position: center;
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-  }
+  } */
+
+  /* add no html index (perfil) "                <div class="perfil"></div>
+" */

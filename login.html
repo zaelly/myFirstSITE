@@ -6,44 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" type="text/css" href="css/folha.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
 </head>
-<body>
-        <main>
-            <div class="perfil"></div>
-            <div class="title">
-                <p>Log In</p>
-            </div>
-            <form action="system.php" method="POST" id="formLogin">
-                <div>
-                    <label>
-                        <input id="userName" type="text" name="user" placeholder="Usuário" required/>
-                    </label>
-                </div>
-                <div>
-                    <input id="password" type="password" name="senha" placeholder="Senha" required/>
-                    <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" onclick="showPassword();" onclick="hidePassword();"   id="olho" class="olho"/>
-                </div>  
-                </div>                
-                <div class="checkbox psc col1">
-                    <input type="checkbox" onclick="checkbotao();" id="checkbox" checked />
-                    <label for="check"> Lembrar </label>
-                </div>
-            
-                <div >
-                    <button type="submit" name="submit" value="submit" id="button" class="button">Entrar</button>
-                </div>   
-
-                <div class="link psc col2">
-                    <a href="#!" style="color:  rgb(7, 144, 185)">Esqueceu a senha?</a>
+    <body class="bg_gif conteiner">
+        <div>
+                    <div class="title">
+                        <p>Login</p>
                     </div>
-    
-                <div class="psc">
-                    <p>Não é membro?<a href="cadastro.html" class="link"> Clique aqui!</a></p>
-                </div>
-            </form>
-        </main>
+                <form action="system.php" method="POST" id="formLogin">
+                    <div>
+                        <label>
+                            <input id="userName" type="text" name="user" placeholder="Usuário" required/>
+                        </label>
+                    </div>
+                    <div>
+                        <input id="password" type="password" name="senha" placeholder="Senha" required/>
+                        <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" onclick="showPassword();" onclick="hidePassword();"   id="olho" class="olho"/>
+                    </div>  
+                    </div>                
+                    <div class="checkbox psc col1">
+                        <input type="checkbox" onclick="checkbotao();" id="checkbox" checked />
+                        <label for="check"> Lembrar </label>
+                    </div>
+                
+                    <div >
+                        <button type="submit" name="submit" value="submit" id="button" class="button">Entrar</button>
+                    </div>   
+
+                    <div class="link psc col1">
+                        <a href="#!" style="color:  rgb(255, 255, 255)">Esqueceu a senha?</a>
+                        </div>
+        
+                    <div class="psc">
+                        <p>Não é membro?<a href="cadastro.html" class="link"> Clique aqui!</a></p>
+                    </div>
+                </form>
             <script src="js/scripts.js"></script>
+            </div>
+           
         </body>
 </html>
