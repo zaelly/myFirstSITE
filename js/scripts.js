@@ -12,6 +12,18 @@ function hamburguer(){
 document.getElementById("hamburguer-icon").onclick = hamburguer();
 document.getElementById("sliding-header-menu-close-button").onclick = header_menu();
 
+//colocar o onclick separado da function e dps chamar a function com o document.onclick
+function hamburguer(){
+  document.getElementById("sliding-header-menu-outer").style.right = "right = 0px";
+};
+ function header_menu(){
+  document.getElementById("sliding-header-menu-outer").style.right = "-320px";
+};
+
+document.getElementById("hamburguer-icon").onclick = hamburguer();
+document.getElementById("sliding-header-menu-close-button").onclick = header_menu();
+
+
 // About us Tab
 
 var aboutUs = {
@@ -107,17 +119,50 @@ function checkbotao() {
 
   }
 }
-// olho
-document.getElementById("olho").onmousedown = function () {
-let passwordInput = document.getElementById('password');
-passwordInput.type = "text";
+// olho 1
+function showPassword() {
+  let passwordInput = document.getElementById('password');
+  passwordInput.type = "text";
 }
 
-document.getElementById("olho").onmouseleave = function () {
-let passwordInput = document.getElementById('password');
-passwordInput.type = "password";
+function hidePassword() {
+  let passwordInput = document.getElementById('password');
+  passwordInput.type = "password";
 }
 
+document.getElementById("olho").onclick = showPassword;
+document.getElementById("olho").onmouseleave = hidePassword;
 
+//olho 2
+function mostrarPassword() {
+  let passwordInput = document.getElementById('pass');
+  passwordInput.type = "text";
+}
+
+function esconderPassword() {
+  let passwordInput = document.getElementById('pass');
+  passwordInput.type = "password";
+}
+
+document.getElementById("olho2").onclick = mostrarPassword;
+document.getElementById("olho2").onmouseleave = esconderPassword;
+
+//parte do switch login e cadastro
+function toggleForm() {
+  var switchBtn = document.getElementById("switchBtn");
+  var loginForm = document.getElementById("loginForm");
+  var cadastroForm = document.getElementById("cadastroForm");
+
+  if (switchBtn.innerHTML === "Login") {
+    switchBtn.innerHTML = "Cadastro";
+    loginForm.style.display = "none";
+    cadastroForm.style.display = "block";
+  } else {
+    switchBtn.innerHTML = "Login";
+    loginForm.style.display = "block";
+    cadastroForm.style.display = "none";
+  }
+}
+//trocar cor do bttswitch 
 
 // id="confiPassword" criar um input pra confirmar senha, mexer no mySQL

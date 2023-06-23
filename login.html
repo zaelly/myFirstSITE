@@ -8,40 +8,33 @@
     <link rel="stylesheet" type="text/css" href="css/folha.css">
 </head>
     <body class="bg_gif conteiner">
-        <div>
-                    <div class="title">
-                        <p>Login</p>
-                    </div>
-                <form action="system.php" method="POST" id="formLogin">
-                    <div>
-                        <label>
-                            <input id="userName" type="text" name="user" placeholder="Usuário" required/>
-                        </label>
-                    </div>
-                    <div>
-                        <input id="password" type="password" name="senha" placeholder="Senha" required/>
-                        <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" onclick="showPassword();" onclick="hidePassword();"   id="olho" class="olho"/>
-                    </div>  
-                    </div>                
-                    <div class="checkbox psc col1">
-                        <input type="checkbox" onclick="checkbotao();" id="checkbox" checked />
-                        <label for="check"> Lembrar </label>
-                    </div>
-                
-                    <div >
-                        <button type="submit" name="submit" value="submit" id="button" class="button">Entrar</button>
-                    </div>   
+       <div class="login-box">
+            <form action="confg.php" method="POST">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <label for="user">Usuário</label>
+                    <input id="userName" type="text" required/>
+                </div>
+                <div class="input-box">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" required/>
+                    <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho" onclick="showPassword();" onmouseleave="hidePassword();"  class="olho"/>
+                </div>
+                <div class="checkbox psc">
+                    <input type="checkbox" onclick="checkbotao();" id="checkbox" checked />
+                    <p for="check" class="link psc col1 checkbox"> Lembrar </p>
+                </div>
+                </br>
+                <button type="submit" name="submit" value="submit" id="button" class="btn">Entrar</button>
+                </br>
+                <div class="link psc col1">
+                    <p>Não tem uma conta ainda? <a href="#!" class="link-info">Cadastre-se</a></p>
+                    <p class="small mb-5 pb-lg-2"><a href="#!" style="color:  rgb(255, 255, 255)">Esqueceu a senha?</a></p> 
+                </div>
 
-                    <div class="link psc col1">
-                        <a href="#!" style="color:  rgb(255, 255, 255)">Esqueceu a senha?</a>
-                        </div>
-        
-                    <div class="psc">
-                        <p>Não é membro?<a href="cadastro.html" class="link"> Clique aqui!</a></p>
-                    </div>
-                </form>
+            </form>
+        </div>
             <script src="js/scripts.js"></script>
-            </div>
-           
+        </section>
         </body>
 </html>

@@ -4,14 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal</title>
-    <link type="text/css" href="asset/folha.css" rel="stylesheet">
-    <link href="asset/script.js"></script>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="css/folha.css">
 </head>
-<body>
+    <body class="bg_gif conteiner">
+        <section>
+            <div id="caixa">
+                <button id="switchBtn" class="slider" onclick="toggleForm()">Login</button>
+            </div>
+            <div id="loginForm">
+                <form action="system.php" method="POST" id="formLogin" style="width: 23rem;">
 
-    <footer>
+                    <h3 class="login">Log in</h3>
 
-        </footer>
-</body>
+                    <div class="element" class="form-outline mb-4">
+                        <input id="userName" class="form-control form-control-lg" type="text" name="user" placeholder="Usuário" required/>
+                    </div>
+                    <div class="element" class="form-outline mb-4">
+                        <input id="password" type="password" name="senha" placeholder="Senha" required/>
+                        <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho" onclick="showPassword();" onmouseleave="hidePassword();"  class="olho"/>
+                    </div>
+                    <div class="checkbox psc">
+                        <input type="checkbox" onclick="checkbotao();" id="checkbox" checked />
+                        <p for="check" class="link psc col1 checkbox"> Lembrar </p>
+                    </div>
+                    </br>
+                    <button type="submit" name="submit" value="submit" id="button" class="btn">Entrar</button>
+                    </br>
+                    <p>Não tem uma conta ainda? <a href="#!" class="link-info">Cadastre-se</a></p>
+                    <div class="link psc col1">
+                        <p class="small mb-5 pb-lg-2"><a href="#!" style="color:  rgb(255, 255, 255)">Esqueceu a senha?</a></p> 
+                    </div>
+
+                    <!-- <div class="link psc col1">
+                        <a href="#!" style="color:  rgb(255, 255, 255)">Ainda não é cadastrado?</a>
+                    </div> -->
+                </form>    
+            </div>
+
+            <div id="cadastroForm" style="display: none;">
+                <form action="confg.php" method="POST">
+
+                    <h3 class="signup">Cadastro</h3>
+
+                    <div class="element" class="form-outline mb-4">
+                        <input id="email" class="form-control form-control-lg" type="text" name="email" placeholder="Email" required/>
+                    </div>
+                    <div class="element" class="form-outline mb-4">
+                        <input id="user" class="form-control form-control-lg" type="text" name="user" placeholder="Usuário" required/>
+                    </div>
+                    <div class="element" class="form-outline mb-4">
+                        <input id="pass" type="password" name="senha" placeholder="Senha" required/>
+                        <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho2" onclick="mostrarPassword();" onmouseleave="esconderPassword();" class="olho"/>
+                    </div>
+                    <button type="submit" name="submit" value="submit" id="button2" class="btn">Entrar</button>
+                    <div class="psc link">
+                        <p>Já é cadastrado?<a href="login.html" class="link"> Clique aqui!</a></p>
+                    </div>
+                </form>    
+            </div>
+        </div>
+            <script src="js/scripts.js"></script>
+        </section>
+        </body>
 </html>

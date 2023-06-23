@@ -1,63 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;   
+  }
+  @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    }
+    }
 body {
     background: linear-gradient(to right, rgb(14, 14, 14), #383c3f);
-    text-align: center;
-    margin-top: 170px;
-    display: block;
+    align-items: center;
+    display: flex;
     justify-content: center;
-    font-family: 'Orbitron', sans-serif;     
+    min-height: 100vh;
+    flex-direction: row;
 }
-.bg_gif{
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background:#12003b;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 1px solid #ffffff;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #ffffff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label, 
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border:none;
+    outline: none;
+    padding: 0 3415px 0 5px;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: 0.3s;
+    pointer-events: none;
+    color: #ffffff;
+  }
+
+/* .bg_gif{
     background-image: url('https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1');
     background-repeat: no-repeat;
     background-size:cover;
-}
+    background-position: center;
+} */
 
-h1,h2,h3,h4{
-    color: #f1f1f1;
-}
+  /* .conteiner{
+      display: grid;     
+      grid-gap: 5px;  
+      grid-template-columns: repeat(auto-fit, 100px);
+      grid-template-rows: repeat(2, 100px);  
+  } */
 
-input[type=email],
-input[type=password],
-input[type=number],
-input[type=date],
-input[type=text] {
-    width: 340px;
-    margin: 8px;
+/* swtich bt login e cadastro*/
+
+  /* .slider {
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    height: 45px;
+    width: 150px;
+    top: 350px;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    border-radius: 45px;
+    background: linear-gradient(to left, #4500a0,  #12003b);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 48px;
+    width: 100px;
+    left: 4px;
+    bottom: 0px;
+    background-color: transparent;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  #switchBtn {
+    background: linear-gradient(to right, #4500a0,  #12003b);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    align-items: center;
+  }
+
+  #cadastroForm {
+    display: none;
+  } */
+
+.btn {
+    align-items: center;
     padding: 12px;
-    background: NONE;
-    color:#f1f1f1;
-    border: 7px;
-    /* border-color: white; */
-    border-image: url('https://gifs.eco.br/wp-content/uploads/2022/11/gifs-rgb-6.gif');
-    border-radius: 5px;
+    margin: 10px;
+    width: 150px;
     font-size: 15px;
-    border-style:solid;
-}
-
-.button {
-    padding: 10px;
-    margin: 15px;
-    width: 360px;
-    font-weight: 900;
+    font-weight: 700;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
-    border:none;
-    background: linear-gradient(to right, #4115a8,  #1b015a);
-    align-items: center;
-}
-.container {  
-    display: grid;  
-    grid-gap: 5px;  
-    grid-template-columns: repeat(auto-fit, 100px);
-    grid-template-rows: repeat(2, 100px);  
+    border-radius: 15px;
+    background: linear-gradient(to left, #4500a0,  #12003b);
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-.title {
-    font-size: 35px;
-    color: rgb(255, 255, 255);
-    margin-top: 15px;
-    padding: 15px;
+.btn:active{
+    transform:scale(1.01) 
 }
 
 .checkbox {
@@ -65,21 +155,23 @@ input[type=text] {
 }
 
 .link {
-    color:  rgb(0, 0, 0);
+    color:  rgb(255, 255, 255);
 }
 
 .psc {
-    color:  rgb(0, 0, 0);
+    display: inline-block;
+    color:  rgb(255, 255, 255);
     margin-top: 10px;
+    text-align: center;
     font-size: 17px;
-    text-shadow : 5px rgb(0, 0, 0);
+    text-shadow : solid 15px rgb(0, 0, 0);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .col1 {
-    align-items: center;
+    text-align: center;
     margin-top: 15px;
-    color:  rgb(0, 0, 0);
+    color:  rgb(255, 255, 255);
 }
 
 .olho {
@@ -88,25 +180,3 @@ input[type=text] {
     position: absolute;
     width: 20px;
 }
-
-/* perfil do usuario */
-.perfil {
-    width: 155px;
-    height: 150px;
-    border-radius: 50%;
-    background: linear-gradient(to right, #552eaf,  #270083);
-    background-image: url('..//img/3492893.gif');
-    background-size: cover;
-    background-position: center;
-    padding: 0;
-  }
-  
-/* *{
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-    box-sizing: border-box;
-  } */
-
-  /* add no html index (perfil) "                <div class="perfil"></div>
-" */

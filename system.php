@@ -26,7 +26,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
   echo "<script>
   if(confirm('Email ou senha incorretos, tente novamente!')){
-    window.history.back();
   }
   </script>";
 }
