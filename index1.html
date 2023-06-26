@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../myFirstSITE/css/folha.css" rel="stylesheet">
+    <title>Zy</title>
+</head>
+
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bem vindo a Zy</h2>
+                <p>Se já possui uma conta, clique aqui!</p>
+                <button class="sign-up-btn">Iniciar Sessão</button>
+            </div>
+        </div>
+        <form class="formulario" action="system.php" method="POST" id="formLogin">
+            <h2 class="create-account">Criar uma conta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="conta-gratis">Criar uma conta grátis</p>
+            <div>
+                <input id="userName" type="text" name="user" placeholder="Usuário" required/>
+            </div>
+            <div >
+                <input id="password" type="password" name="senha" placeholder="Senha" required/>
+                <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho" onclick="showPassword();" onmouseleave="hidePassword();"  class="olho"/>
+            </div>
+            <p class="small mb-5 pb-lg-2"><a href="#!" style="color:  rgb(255, 255, 255)">Esqueceu a senha?</a></p> 
+            <div class="checkbox psc">
+                <input type="checkbox" style="display: flex;" onclick="checkbotao();" id="checkbox" checked />
+                <p for="check" class="checkbox"> Lembrar </p>
+            </div>
+            </br>
+            <button type="submit" name="submit" value="submit" id="button" class="btn">Entrar</button>
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sessão</h2>
+            <div class="icones">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="conta-gratis">Ainda não tem uma conta?</p>
+            <div>
+                <input id="email" type="text" name="email" placeholder="Email" required/>
+            </div>
+            <div>
+                <input id="user" type="text" name="user" placeholder="Usuário" required/>
+            </div>
+            <div  >
+                <input id="pass" type="password" name="senha" placeholder="Senha" required/>
+                <img src="../myFirstSITE/img/Imagem-Olho-PNG.png" id="olho2" onclick="mostrarPassword();" onmouseleave="esconderPassword();" class="olho"/>
+            </div>
+            <button type="submit" name="submit" value="submit" id="button2" class="btn">Entrar</button>
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bem vindo de novo!</h2>
+                <p>Se já tem uma conta, clique aqui!</p>
+                <button class="sign-in-btn">Cadastre-se</button>
+            </div>
+        </div>
+    </div>
+    <script src="..//myFirstSITE/js/scripts.js"></script>
+</body>
+
+</html>

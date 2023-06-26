@@ -147,22 +147,16 @@ function esconderPassword() {
 document.getElementById("olho2").onclick = mostrarPassword;
 document.getElementById("olho2").onmouseleave = esconderPassword;
 
-//parte do switch login e cadastro
-function toggleForm() {
-  var switchBtn = document.getElementById("switchBtn");
-  var loginForm = document.getElementById("loginForm");
-  var cadastroForm = document.getElementById("cadastroForm");
-
-  if (switchBtn.innerHTML === "Login") {
-    switchBtn.innerHTML = "Cadastro";
-    loginForm.style.display = "none";
-    cadastroForm.style.display = "block";
-  } else {
-    switchBtn.innerHTML = "Login";
-    loginForm.style.display = "block";
-    cadastroForm.style.display = "none";
-  }
-}
-//trocar cor do bttswitch 
-
 // id="confiPassword" criar um input pra confirmar senha, mexer no mySQL
+
+const $btnSignIn= document.querySelector('.sign-in-btn'),
+      $btnSignUp = document.querySelector('.sign-up-btn'),  
+      $signUp = document.querySelector('.sign-up'),
+      $signIn  = document.querySelector('.sign-in');
+
+document.addEventListener('click', e => {
+    if (e.target === $btnSignIn || e.target === $btnSignUp) {
+        $signIn.classList.toggle('active');
+        $signUp.classList.toggle('active')
+    }
+});

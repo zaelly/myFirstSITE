@@ -2,176 +2,135 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;   
-  }
-  @media (min-width: 1025px) {
-    .h-custom-2 {
-    height: 100%;
-    }
-    }
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
-    background: linear-gradient(to right, rgb(14, 14, 14), #383c3f);
-    align-items: center;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    flex-direction: row;
-}
-.login-box {
-    position: relative;
-    width: 400px;
-    height: 500px;
-    background:#12003b;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-h2 {
-    font-size: 2em;
-    color: #ffffff;
-    text-align: center;
-}
-.input-box {
-    position: relative;
-    width: 310px;
-    margin: 30px 0;
-    border-bottom: 1px solid #ffffff;
-}
-.input-box label {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #ffffff;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-box input:focus~label, 
-.input-box input:valid~label {
-    top: -5px;
-}
-
-.input-box input {
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border:none;
-    outline: none;
-    padding: 0 3415px 0 5px;
-}
-
-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    transition: 0.3s;
-    pointer-events: none;
-    color: #ffffff;
-  }
-
-/* .bg_gif{
-    background-image: url('https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?resize=476%2C280&ssl=1');
-    background-repeat: no-repeat;
-    background-size:cover;
+    justify-content: center;
+    background-image: url();
+    background: #222;
     background-position: center;
-} */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
 
-  /* .conteiner{
-      display: grid;     
-      grid-gap: 5px;  
-      grid-template-columns: repeat(auto-fit, 100px);
-      grid-template-rows: repeat(2, 100px);  
-  } */
+.container-form {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
 
-/* swtich bt login e cadastro*/
-
-  /* .slider {
+.welcome-back {
+    display: flex;
     align-items: center;
-    position: absolute;
-    cursor: pointer;
-    height: 45px;
-    width: 150px;
-    top: 350px;
-    left: 100px;
-    right: 0;
-    bottom: 0;
-    border-radius: 45px;
-    background: linear-gradient(to left, #4500a0,  #12003b);
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 48px;
-    width: 100px;
-    left: 4px;
-    bottom: 0px;
-    background-color: transparent;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
+    text-align: center;
+}
 
-  #switchBtn {
-    background: linear-gradient(to right, #4500a0,  #12003b);
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background: linear-gradient(to left, #4500a0,  #12003b);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
     cursor: pointer;
-    position: relative;
+    font-size: .9rem;
+    margin-top: 2rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: #fff;
+}
+
+.message button:hover {
+    background: linear-gradient(to left, #4500a0,  #12003b);
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background:rgba(18, 0, 34, 0.541);
+    text-align: center;
+}
+
+.creat-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.icones {
+    width: 200px;
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin #ffffff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.conta-gratis {
+    padding: 2rem 0;
+}
+
+.formulario input {
+    width: 70%;
     display: block;
-    align-items: center;
-  }
-
-  #cadastroForm {
-    display: none;
-  } */
-
-.btn {
-    align-items: center;
-    padding: 12px;
-    margin: 10px;
-    width: 150px;
-    font-size: 15px;
-    font-weight: 700;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
     color: white;
-    cursor: pointer;
-    border-radius: 15px;
-    background: linear-gradient(to left, #4500a0,  #12003b);
-    -webkit-transition: .4s;
-    transition: .4s;
 }
 
-.btn:active{
-    transform:scale(1.01) 
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.checkbox {
-    display: left;
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
 }
 
-.link {
-    color:  rgb(255, 255, 255);
-}
-
-.psc {
-    display: inline-block;
-    color:  rgb(255, 255, 255);
-    margin-top: 10px;
-    text-align: center;
-    font-size: 17px;
-    text-shadow : solid 15px rgb(0, 0, 0);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.col1 {
-    text-align: center;
-    margin-top: 15px;
-    color:  rgb(255, 255, 255);
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .olho {
@@ -179,4 +138,35 @@ label {
     margin: 23px -40px;
     position: absolute;
     width: 20px;
+}
+.btn {
+    padding: 1rem;
+    font-weight: 400;
+    background: linear-gradient(to left, #4500a0,  #12003b);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: #fff;
+}
+
+.btn:active{
+    transform:scale(1.01) 
+}
+
+.checkbox {
+    display:flex;
+    position: relative;
+}
+
+.olho {
+    cursor: pointer;
+    margin: -55px 80px;
+    position: absolute;
+    width: 20px;
+    filter:invert(70%);
 }
